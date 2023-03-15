@@ -47,7 +47,7 @@ if [ $# -ne 3 ]; then
     echo "error: no hay tres parametros";
     else
         echo "hay tres parametros";
-    fi;
+fi;
 
 #EJERCICIO_6
 #!/bin/bash
@@ -57,7 +57,7 @@ echo "tienen que ser dos parametros";
 else
     let suma=$(($1 + $2));
     echo "$1 + $2 = $suma "
-    fi;
+fi;
 
 #EJERCICIO_7
 #!/bin/bash
@@ -80,7 +80,7 @@ elif [ $3 -ne "+" ] && [ $3 -ne "-" ] && [ $3 -ne "x" ] && [ $3 -ne "/" ]; then
                 elif [ $3 -eq "/"]; then
                     let operacion=$(($1 / $2)); 
                     echo operacion;
-                    fi;
+fi;
 
 
 #EJERCICIO_8
@@ -89,7 +89,7 @@ if [ fichero.sh -e ]; then
 echo "el fichero existe";
 else
     echo "el fichero no existe";
-    fi;
+fi;
 
 #EJERCICIO_9
 #!/bin/bash
@@ -97,7 +97,7 @@ if [ fichero.sh -d ]; then
 echo "es un directorio";
 else
     echo "es un fichero";
-    fi;
+fi;
 
 #EJERCICIO_10
 #!/bin/bash
@@ -105,19 +105,19 @@ if [ fichero.txt -r ]; then
 echo "tiene permisos para leer"
 else
     echo "no tiene permisos para leer";
-    fi;
+fi;
 
 if [ fichero.txt -w ]; then
 echo "tiene permisos para escribir"
 else
     echo "no tiene permisos para escribir";
-    fi;
+fi;
     
 if [ fichero.txt -x ]; then
 echo "tiene permisos para ejecutar"
 else
     echo "no tiene permisos para ejecutar";
-    fi;
+fi;
 
 #EJERCICIO_11
 #!/bin/bash
